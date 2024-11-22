@@ -13,100 +13,332 @@ context:
   version: 2.0.0
   action: on_search
   ttl: PT30S
+# message:
+#   catalog:
+#     descriptor:
+#       name: ABC Bus Services Solutions
+#       images:
+#         - url: https://abc-bus.in/logos/logo.ico
+#     providers:
+#       - id: P1
+#         descriptor:
+#           name: ABC Operator 1 Bus Services
+#           images:
+#             - url: https://operator1.com/logos/logo.ico
+#         fulfillments:
+#           - id: F1
+#             type: TRIP
+#             stops:
+#               - type: 
+#                 id: S5
+#                 location:
+#                   descriptor:
+#                     name: Bangalore
+#                     code: std:080
+#                   gps: 12.979759, 77.590427
+#               - type: PICKUP
+#                 location:
+#                   descriptor:
+#                     name: Agara
+#                     code: std:080-pincode:560034
+#                   gps: 12.924479, 77.648999
+#               - type: PICKUP
+#                 location:
+#                   descriptor:
+#                     name: Bellandur
+#                     code: std:080-pincode:560103
+#                   gps: 12.930839, 77.677941
+#               - type: END
+#                 id: S6
+#                 location:
+#                   descriptor:
+#                     name: Hyderabad
+#                     code: std:040
+#                   gps: 17.399832, 78.505532
+#               - type: DROP
+#                 location:
+#                   descriptor:
+#                     name: Ameerpet
+#                     code: std:040-pincode:500016
+#                   gps: 17.441586, 78.441581
+#               - type: DROP
+#                 location:
+#                   descriptor:
+#                     name: Central Bus Station
+#                     code: std:040-pincode:500012
+#                   gps: 17.379024, 78.482443
+#             vehicle:
+#               category: BUS
+#           - id: F2
+#             type: TRIP
+#             stops:
+#               - type: START
+#                 location:
+#                   descriptor:
+#                     name: Bangalore
+#                     code: std:080
+#                   gps: 12.979759, 77.590427
+#               - type: PICKUP
+#                 location:
+#                   descriptor:
+#                     name: Agara
+#                     code: std:080-pincode:560034
+#                   gps: 12.924479, 77.648999
+#               - type: PICKUP
+#                 location:
+#                   descriptor:
+#                     name: Bellandur
+#                     code: std:080-pincode:560103
+#                   gps: 12.930839, 77.677941
+#               - type: END
+#                 location:
+#                   descriptor:
+#                     name: CHENNAI
+#                     code: std:040
+#                   gps: 17.399832, 78.505532
+#               - type: DROP
+#                 location:
+#                   descriptor:
+#                     name: Ameerpet
+#                     code: std:040-pincode:500016
+#                   gps: 17.441586, 78.441581
+#               - type: DROP
+#                 location:
+#                   descriptor:
+#                     name: Central Bus Station
+#                     code: std:040-pincode:500012
+#                   gps: 17.379024, 78.482443
+#             vehicle:
+#               category: BUS
 message:
   catalog:
     descriptor:
-      name: ABC Bus Services Solutions
+      name: Universal Travels
       images:
-        - url: https://abc-bus.in/logos/logo.ico
+      - url: https://abc-bus.in/logos/logo.ico
     providers:
-      - id: P1
+    - id: P1
+      descriptor:
+        name: Universal Travels Operator 1 Bus Services
+        images:
+        - url: https://operator1.com/logos/logo.ico
+      fulfillments:
+      - id: F1
+        type: TRIP
+        rating: '4.5'
+        stops:
+        - id: S1
+          type: START
+          location:
+            descriptor:
+              name: Coimbatore
+              code: std:0422
+        - id: S2
+          type: PICKUP
+          location:
+            descriptor:
+              name: Gandhipuram
+              Address: Tamil Nadu Hotel
+              code: std:0422-pincode:641012
+            gps: 12.930839, 77.677941
+          time:
+            label: DATE_TIME
+            timestamp: '2024-11-20T06:45:00.000Z'
+        - id: S3
+          type: PICKUP
+          location:
+            descriptor:
+              name: Lakshmi Mills
+              Address: Lakshmi Mills
+              code: std:0422-pincode:641037
+            gps: 12.930839, 77.677941
+          time:
+            label: DATE_TIME
+            timestamp: '2024-11-20T07:45:00.000Z'
+        - id: S4
+          type: PICKUP
+          location:
+            descriptor:
+              name: Peelamedu
+              Address: In Front Of Ktm Showroom, Avinahi Road
+              code: std:0422-pincode:641004
+            gps: 12.930839, 77.677941
+          time:
+            label: DATE_TIME
+            timestamp: '2024-11-20T08:45:00.000Z'
+        - id: S5
+          type: END
+          location:
+            descriptor:
+              name: Chennai
+              code: std:044
+        - id: S6
+          type: DROP
+          location:
+            descriptor:
+              name: Chengalpattu
+              Address: Toll
+              code: std:044-pincode:603001
+            gps: 17.441586, 78.441581
+          time:
+            label: DATE_TIME
+            timestamp: 2024-11-20T010:10:00.000Z
+        - id: S7
+          type: DROP
+          location:
+            descriptor:
+              Name: Mahendra City
+              Address: Highway
+              code: std:044-pincode:603002
+            gps: 17.379024, 78.482443
+          time:
+            label: DATE_TIME
+            timestamp: '2024-11-20T11:30:00.000Z'
+        - id: S8
+          type: DROP
+          location:
+            descriptor:
+              Name: Koyambedu
+              Address: YBM TRAVELS, 32/1155, P H Road, Koyambedu, Near Lanson Toyota
+                Showroom
+              code: std:044-pincode:600107
+            gps: 17.379024, 78.482443
+          time:
+            label: DATE_TIME
+            timestamp: '2024-11-20T12:30:00.000Z'
+        vehicle:
+          category: BUS A/C Sleeper
+          capacity: 35
+          variant: Sleeper
+          size: 2+1
+          make: Toyota
+          model: Highlander
+          wheelchair_access: 'No'
+          code: VOL9400SLEEPERAC
+          registration: TN123CD
+          color: Blue
+        tags:
+        - descriptor:
+            code: VEHICLE_GRID
+          display: false
+          list:
+          - descriptor:
+              code: X_MAX
+            value: '14'
+          - descriptor:
+              code: Y_MAX
+            value: '3'
+          - descriptor:
+              code: Z_MAX
+            value: '1'
+          - descriptor:
+              code: X_LOBBY_START
+            value: '0'
+          - descriptor:
+              code: X_LOBBY_SIZE
+            value: '12'
+          - descriptor:
+              code: Y_LOBBY_START
+            value: '1'
+          - descriptor:
+              code: Y_LOBBY_SIZE
+            value: '1'
+          - descriptor:
+              code: SEAT_SELECTION
+            value: mandatory
+        - descriptor:
+            code: VEHICLE_AVAIBALITY
+          display: true
+          list:
+          - descriptor:
+              code: AVALIABLE_SEATS
+            value: '30'
+        - descriptor:
+            code: VEHICLE_AMENITIES
+          list:
+          - value: WATER_BOTTLE
+          - value: WIFI
+          - value: BLANKET
+          - value: CCTV
+      categories:
+      - descriptor:
+          name: Seater
+          code: SEATER
+        id: C1
+      - descriptor:
+          name: Sleeper
+          code: SLEEPER
+        id: C2
+      - descriptor:
+          name: Semi Sleeper
+          code: SEMI_SLEEPER
+        id: C3
+      items:
+      - id: I0
+        quantity:
+          allocated:
+            count: 50
+          available:
+            count: 100
+          maximum:
+            count: 5
+          minimum:
+            count: 1
         descriptor:
-          name: ABC Operator 1 Bus Services
-          images:
-            - url: https://operator1.com/logos/logo.ico
-        fulfillments:
-          - id: F1
-            type: TRIP
-            stops:
-              - type: 
-                id: S5
-                location:
-                  descriptor:
-                    name: Bangalore
-                    code: std:080
-                  gps: 12.979759, 77.590427
-              - type: PICKUP
-                location:
-                  descriptor:
-                    name: Agara
-                    code: std:080-pincode:560034
-                  gps: 12.924479, 77.648999
-              - type: PICKUP
-                location:
-                  descriptor:
-                    name: Bellandur
-                    code: std:080-pincode:560103
-                  gps: 12.930839, 77.677941
-              - type: END
-                id: S6
-                location:
-                  descriptor:
-                    name: Hyderabad
-                    code: std:040
-                  gps: 17.399832, 78.505532
-              - type: DROP
-                location:
-                  descriptor:
-                    name: Ameerpet
-                    code: std:040-pincode:500016
-                  gps: 17.441586, 78.441581
-              - type: DROP
-                location:
-                  descriptor:
-                    name: Central Bus Station
-                    code: std:040-pincode:500012
-                  gps: 17.379024, 78.482443
-            vehicle:
-              category: BUS
-          - id: F2
-            type: TRIP
-            stops:
-              - type: START
-                location:
-                  descriptor:
-                    name: Bangalore
-                    code: std:080
-                  gps: 12.979759, 77.590427
-              - type: PICKUP
-                location:
-                  descriptor:
-                    name: Agara
-                    code: std:080-pincode:560034
-                  gps: 12.924479, 77.648999
-              - type: PICKUP
-                location:
-                  descriptor:
-                    name: Bellandur
-                    code: std:080-pincode:560103
-                  gps: 12.930839, 77.677941
-              - type: END
-                location:
-                  descriptor:
-                    name: CHENNAI
-                    code: std:040
-                  gps: 17.399832, 78.505532
-              - type: DROP
-                location:
-                  descriptor:
-                    name: Ameerpet
-                    code: std:040-pincode:500016
-                  gps: 17.441586, 78.441581
-              - type: DROP
-                location:
-                  descriptor:
-                    name: Central Bus Station
-                    code: std:040-pincode:500012
-                  gps: 17.379024, 78.482443
-            vehicle:
-              category: BUS
+          name: Seater Ticket
+          code: SEAT
+        price:
+          minimum_value: '500'
+          maximum_value: '1900'
+        fulfillment_ids:
+        - F1
+      - id: I1
+        quantity:
+          allocated:
+            count: 30
+          available:
+            count: 80
+          maximum:
+            count: 5
+          minimum:
+            count: 1
+        descriptor:
+          name: Sleeper Ticket
+          code: SEAT
+        price:
+          minimum_value: '1000'
+          maximum_value: '2500'
+        fulfillment_ids:
+        - F1
+      payments:
+      - collected_by: BAP
+        tags:
+        - descriptor:
+            code: BUYER_FINDER_FEES
+          display: false
+          list:
+          - descriptor:
+              code: BUYER_FINDER_FEES_PERCENTAGE
+            value: '1'
+          - descriptor:
+              code: BUYER_FINDER_FEES_TYPE
+            value: percent
+        - descriptor:
+            code: SETTLEMENT_TERMS
+          display: false
+          list:
+          - descriptor:
+              code: SETTLEMENT_WINDOW
+            value: P30D
+          - descriptor:
+              code: SETTLEMENT_BASIS
+            value: INVOICE_RECEIPT
+          - descriptor:
+              code: MANDATORY_ARBITRATION
+            value: 'TRUE'
+          - descriptor:
+              code: COURT_JURISDICTION
+            value: New Delhi
+          - descriptor:
+              code: STATIC_TERMS
+            value: https://api.transit-solutions.com/booking/terms
