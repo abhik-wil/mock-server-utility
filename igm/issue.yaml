@@ -1,0 +1,15 @@
+default:
+  callback: "on_issue"
+  uri:
+    $ref: ""
+  delay: 300
+  payload:
+    $ref: "./template/on_issue.yaml"
+
+flow_1_buyer_app_provides_relevant_information:
+  callback: "on_issue"
+  uri:
+    $ref: ""
+  delay: 300
+  payload:
+    $ref: "./template/on_issue.yaml"
