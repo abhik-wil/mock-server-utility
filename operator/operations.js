@@ -74,6 +74,25 @@ class EqualOperation extends Operator{
     }
 }
 
+class NotEqualOperation extends Operator{
+    __process() {
+        let flag = 0
+        const value = this?.readValue(this?.input?.value[0]?.operation?.input)
+        if(!this?.input?.value?.includes(value)){
+            flag = 1
+        }
+        this.output = new Output(flag);
+        return this;
+    }
+
+
+    readValue(readValue) {
+        const read = new ReadOperation(this.context)
+        read.input = new Input(this.context, readValue)
+        return read.getOutput().getValue()
+    }
+}
+
 class AndOrOperation extends Operator{
     __process(){
         this.output = new Output(this.match(this.input.value))
@@ -81,7 +100,7 @@ class AndOrOperation extends Operator{
     }
 
     match(input){
-        if(input.length){
+        if(input?.length){
             let result = input.map(element => {
                 if(element?.operation?.type =='EQUAL'){
                     const EQUAL = new EqualOperation(this.context)
@@ -137,4 +156,4 @@ class greaterORlessthan extends Operator{
     }
 }
 
-module.exports={GenerateUuidOperation, GenerateTmpstmpOperation, ReadOperation, EqualOperation, AndOrOperation, equalReturn}
+module.exports={GenerateUuidOperation, GenerateTmpstmpOperation, ReadOperation, EqualOperation, NotEqualOperation, AndOrOperation, equalReturn}
