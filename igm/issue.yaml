@@ -6,33 +6,33 @@ default:
   payload:
     $ref: "./template/flow_1_buyer_raises_item_category/on_issue_2_processing_action.yaml"
 
-flow_1_buyer_raises_item_category_issue_4:
-  callback: "on_issue"
-  uri:
-    $ref: ""
-  delay: 300
-  payload:
-    $ref: "./template/flow_1_buyer_raises_item_category/on_issue_5_processing_more_info.yaml"
-  condition:
-    operation:
-      type: AND
-      title: Checks if properties are present
-      input:
-        - operation:
-            type: READ
-            title: Checks if updated target is present
-            input:
-              value: "req_body.message.updated_target"
-        - operation:
-            type: READ
-            title: Checks if respondent ids are present
-            input:
-              value: "req_body.message.issue.respondent_ids"
-        - operation:
-            type: READ
-            title: Checks if resolver ids is present
-            input:
-              value: "req_body.message.issue.resolver_ids"
+# flow_1_buyer_raises_item_category_issue_4:
+#   callback: "on_issue"
+#   uri:
+#     $ref: ""
+#   delay: 300
+#   payload:
+#     $ref: "./template/flow_1_buyer_raises_item_category/on_issue_5_processing_more_info.yaml"
+#   condition:
+#     operation:
+#       type: AND
+#       title: Checks if properties are present
+#       input:
+#         - operation:
+#             type: READ
+#             title: Checks if updated target is present
+#             input:
+#               value: "req_body.message.updated_target"
+#         - operation:
+#             type: READ
+#             title: Checks if respondent ids are present
+#             input:
+#               value: "req_body.message.issue.respondent_ids"
+#         - operation:
+#             type: READ
+#             title: Checks if resolver ids is present
+#             input:
+#               value: "req_body.message.issue.resolver_ids"
 
 flow_1_buyer_raises_item_category_issue_7:
   callback: "on_issue"
@@ -46,6 +46,7 @@ flow_1_buyer_raises_item_category_issue_7:
       type: AND
       title: Checks if properties are present
       input:
+        value:
         # - operation:
         #     type: NOT_EQUAL
         #     title: Checks if updated target is present
@@ -64,16 +65,17 @@ flow_1_buyer_raises_item_category_issue_7:
         #           input:
         #             value: "req_body.message.respondent_ids"
         #       - "undefined"
-        - operation: 
-            type: EQUAL
-            title: Checks if status is closed is present
-            input:
-              - operation:
-                  type: READ
-                  title: 
-                  input:
-                    value: "req_body.message.issue.status"
-              - "PROCESSING"
+          - operation: 
+              type: NOT_EQUAL
+              title: Checks if status is closed is present
+              input:
+                value:
+                  - operation:
+                      type: READ
+                      title: 
+                      input:
+                        value: "req_body.message.issue.status"
+                  - "PROCESSING"
         # - operation:
         #     type: NOT_EQUAL
         #     title: Check if resolver ids are absent

@@ -107,6 +107,11 @@ class AndOrOperation extends Operator{
                     EQUAL.input = new Input(this.context,element?.operation?.input)
                     return EQUAL.getOutput().getValue()
                 }
+                if(element?.operation?.type =='NOT_EQUAL'){
+                    const NOTEQUAL = new NotEqualOperation(this.context)
+                    NOTEQUAL.input = new Input(this.context,element?.operation?.input)
+                    return NOTEQUAL.getOutput().getValue()
+                }
             });
             if(this.input.type=='AND')return result.includes(0)?false:true
             else if(this.input.type == 'OR') return result.includes(1)?true:false     
