@@ -1,0 +1,96 @@
+[2024-12-12T07:01:26.030Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:02:16.944Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:02:51.182Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:02:51.188Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:02:51.192Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:02:51.200Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:03:57.805Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:04:02.365Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:04:02.368Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:04:02.370Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:04:02.374Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:04:30.219Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:04:34.252Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:04:34.256Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:04:34.262Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:04:34.266Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:06:47.805Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:06:52.465Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:06:52.469Z] [[31merror[39m]: ERROR!! Cannot read properties of undefined (reading '0')
+[2024-12-12T07:07:20.416Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:07:24.215Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:07:24.219Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:07:24.221Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:07:24.231Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:08:15.593Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:08:21.650Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:08:21.654Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:08:21.657Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:08:21.672Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:09:45.439Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:09:50.905Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:09:50.909Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:09:50.911Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:09:50.917Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:10:23.382Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:10:30.031Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:10:30.035Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:10:30.037Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:10:30.040Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:12:03.206Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:12:06.591Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:12:06.595Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:12:06.596Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:12:06.602Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:12:49.925Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:12:49.928Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:12:49.930Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:12:49.932Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:13:29.251Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:13:32.765Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:13:32.770Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:13:32.772Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:13:32.777Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:14:10.643Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:14:14.120Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:14:14.126Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:14:14.130Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:14:14.135Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:17:11.054Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:17:36.230Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:17:36.234Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:17:36.237Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:17:36.243Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:21:35.639Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:21:37.704Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:21:37.707Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:21:37.709Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:21:37.713Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:30:57.819Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:31:02.407Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:31:02.408Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:31:02.410Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:31:02.411Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:33:06.140Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:33:06.142Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:33:06.143Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:33:06.144Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:33:13.674Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:33:13.675Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:33:13.676Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:33:13.677Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:35:15.968Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:35:20.276Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:35:20.278Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:35:20.280Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:35:20.281Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:39:15.109Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:39:17.857Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:39:17.859Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:39:17.860Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:39:17.862Z] [[32minfo[39m]: Schema validation : SUCCESS
+[2024-12-12T07:40:02.441Z] [[32minfo[39m]: This app is running on port number : 5500
+[2024-12-12T07:40:08.764Z] [[32minfo[39m]: Received /issue api request
+[2024-12-12T07:40:08.766Z] [[32minfo[39m]: Validating issue request
+[2024-12-12T07:40:08.767Z] [[32minfo[39m]: Inside schema validation service for issue api
+[2024-12-12T07:40:08.769Z] [[32minfo[39m]: Schema validation : SUCCESS
